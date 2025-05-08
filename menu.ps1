@@ -8,17 +8,6 @@
 # raccourcis clavier pour comment/uncomment : Ctrl+K & Ctrl+C    et     Ctrl+K & Ctrl+U
 
 
-# Fonction pour afficher une barre de chargement animée
-# function Show-Loading {
-#     $loadingText = "Chargement du projet ARC"
-#     Write-Host ""
-#     foreach ($i in 1..3) {
-#         Write-Host ("$loadingText" + "." * $i) -ForegroundColor Cyan
-#         Start-Sleep -Milliseconds 500
-#         Clear-Host
-#     }
-# }
-
 Clear-Host
 Show-Header
 
@@ -29,7 +18,7 @@ function Show-Menu {
     Write-Host "3.	Reboot et extinction" -ForegroundColor Green
     Write-Host "4.	Mise à jour du système" -ForegroundColor Green
     Write-Host "5.	Divers (outils supplémentaires)" -ForegroundColor Green
-    Write-Host "6.	Quitter"
+    Write-Host "6.	Quitter" -ForeGroundColor Yellow
    
 }
 

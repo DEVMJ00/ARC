@@ -1,4 +1,4 @@
-# ARC (Assistant de Reparation et de Configuration)
+# ARC (Assistant d'Adminsitration, de Reparation et de Configuration)
 
 Outil PowerShell modulaire pour l'administration de postes Windows.
 

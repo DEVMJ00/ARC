@@ -9,7 +9,7 @@ while ($true) {
     Write-Host "==== Divers - Outils supplémentaires ====" -ForegroundColor Cyan
     Write-Host ""
     Write-Host "1. Nettoyer le dossier ""temp"" "
-    Write-Host "2. Vérifier l'état de la batterie" -ForeGroundColor Red
+    Write-Host "2. Vérifier l'état de la batterie" 
     Write-Host "3. Retour au menu principal "
     Write-Host ""
 
@@ -24,14 +24,16 @@ while ($true) {
                 Start-Sleep -Seconds 3
                 }
             }
-
-
-            
+          
         "2" {
+            if (Test-Path "$PSScriptRoot\check-battery.ps1") {
+               . "$PSScriptRoot\check-battery.ps1"
+            } else {
+                Write-Host "Module de Vérification de la batterie introuvable." -ForeGroundColor Red
+                Start-Sleep -Seconds 3
+            }         
 
         }
-
-
 
         "3" {
                 Clear-Host
