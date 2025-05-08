@@ -1,0 +1,8 @@
+# PowerShell
+# Ignorer les fichiers de sortie .log ou autres fichiers temporaires
+*.log
+*.bak
+*.swp
+
+# Ignorer gitcommands.md
+gitcommands.md
