@@ -1,7 +1,7 @@
 ﻿# tools-menu.ps1
 
 # Chargement des composants
-. "$PSScriptRoot\modules\shared\encodeUTF8.ps1"
+. "$PSScriptRoot\modules\shared\console\encodeUTF8.ps1"
 
 
 while ($true) {
@@ -17,7 +17,7 @@ while ($true) {
 
     switch ($userChoice) {
         "1" {
-            if (Test-Path ".\modules\tools\clean-temp.ps1") {
+            if (Test-Path "$PSScriptRoot\clean-temp.ps1") {
                 . "$PSScriptRoot\clean-temp.ps1"
             } else {
                 Write-Host "Module de suppression des fichiers temporaires introuvable." -ForegroundColor Red

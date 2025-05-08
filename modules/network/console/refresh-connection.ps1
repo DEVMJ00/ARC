@@ -25,8 +25,8 @@
 
 
 # Chargement des composants 
-. "$PSScriptRoot\..\shared\encodeUTF8.ps1"
-. "$PSScriptRoot\..\shared\check-admin.ps1"
+. "$PSScriptRoot\..\..\shared\console\encodeUTF8.ps1"
+. "$PSScriptRoot\..\..\shared\console\check-admin.ps1"
 if (-not (Assert-AdminOrExit)) {
     return
 }

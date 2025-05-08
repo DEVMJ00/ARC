@@ -17,7 +17,7 @@
 
 
 # Chargement des composants
-. "$PSScriptRoot\..\shared\encodeUTF8.ps1"
+. "$PSScriptRoot\..\shared\console\encodeUTF8.ps1"
 
 Clear-Host
 Write-Host "Votre adresse IP actuelle : " -ForegroundColor Cyan

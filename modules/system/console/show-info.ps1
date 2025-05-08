@@ -1,4 +1,4 @@
-﻿# modules/system/show-info.ps1
+﻿# modules/system/console/show-info.ps1
 
 
 <#  
@@ -31,7 +31,7 @@
 
 
 # Chargement des composants
-. "$PSScriptRoot\..\shared\encodeUTF8.ps1"
+. "$PSScriptRoot\..\..\shared\console\encodeUTF8.ps1"
 
 Clear-Host
 Write-Host "⏱ Chargement des informations systèmes..."

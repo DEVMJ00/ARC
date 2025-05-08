@@ -8,6 +8,8 @@ Outil PowerShell modulaire pour l'administration de postes Windows.
 - Facilement extensible
 
 ## Structure
+│   .gitignore
+│   gitcommands.md
 │   menu.ps1
 │   README.md
 │
@@ -25,7 +27,11 @@ Outil PowerShell modulaire pour l'administration de postes Windows.
     │       header.ps1
     │
     ├───system
+    │       show-info.ps1
+    │       system-menu.ps1
+    │
     ├───tools
+    │       check-battery.ps1
     │       clean-temp.ps1
     │       tools-menu.ps1
     │

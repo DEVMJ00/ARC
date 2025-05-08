@@ -47,9 +47,6 @@ function Assert-AdminOrExit {
     $true si l'utilisateur est administrateur, sinon $false. Si l'utilisateur n'est pas administrateur, il est renvoyé au menu principal.
 #>
 
-
-
-
     if (-not (Test-AdminRights)) {
         Write-Host "`n❌ Ce script nécessite les droits administrateur." -ForegroundColor Red
         Write-Host "Veuillez relancer PowerShell en tant qu'administrateur." -ForegroundColor Yellow
@@ -60,7 +57,7 @@ function Assert-AdminOrExit {
            $null = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
          } catch {
             Read-Host "`nAppuyez sur Entrée pour revenir au menu"
-            . "$PSScriptRoot\..\..\menu.ps1" ;
+            . "$PSScriptRoot\..\..\menu-console.ps1" ;
      }
         return $false
     }

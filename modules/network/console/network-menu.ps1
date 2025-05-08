@@ -1,8 +1,8 @@
-﻿# modules/network/network-menu.ps1
+﻿# network-menu.ps1
 
 # Chargement des composants
-. "$PSScriptRoot\..\shared\encodeUTF8.ps1"
-. "$PSScriptRoot\..\shared\header.ps1"
+. "$PSScriptRoot\..\shared\console\encodeUTF8.ps1"
+. "$PSScriptRoot\..\shared\console\header.ps1"
 
 
 # Boucle de menu réseau

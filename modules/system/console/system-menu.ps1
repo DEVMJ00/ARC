@@ -1,8 +1,8 @@
 ﻿# modules/system/system-menu.ps1
 
 # Chargement des composants
-. "$PSScriptRoot\..\shared\encodeUTF8.ps1"
-. "$PSScriptRoot\..\shared\header.ps1"
+. "$PSScriptRoot\..\..\shared\console\encodeUTF8.ps1"
+. "$PSScriptRoot\..\..\shared\console\header.ps1"
 
 
 # Boucle de menu système
@@ -10,7 +10,7 @@ while ($true) {
     Clear-Host
     Write-Host "==== Gestion du Système ====" -ForegroundColor Cyan
     Write-Host ""
-    Write-Host "1. Afficher les informations sur votre système"
+    Write-Host "1. Afficher les informations sur votre système :"
     Write-Host "2. Retour au menu principal"
     Write-Host ""
 
@@ -39,5 +39,7 @@ while ($true) {
     }
 }
 
+
+   
 
 

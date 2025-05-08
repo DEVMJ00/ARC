@@ -15,7 +15,7 @@
 
 
 # Chargement des composants
-. "$PSScriptRoot\modules\shared\encodeUTF8.ps1"
+. "$PSScriptRoot\modules\shared\console\encodeUTF8.ps1"
 
 
 Clear-Host
