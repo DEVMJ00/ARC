@@ -1,9 +1,8 @@
-# ARC (Assistant d'Adminsitration, de Reparation et de Configuration)
-
+# ARC (Administrate, Restore & Configure)
 Outil PowerShell modulaire pour l'administration de postes Windows.
 
-## Fonctionnalités
 
+## Fonctionnalités
 - Menu principal interactif
 - Modules système, réseau, sécurité, etc.
 - Facilement extensible
@@ -33,7 +32,22 @@ Outil PowerShell modulaire pour l'administration de postes Windows.
     └───update
 
     
-## Utilisation
+## Installation et utilisation
 
-Lancer `menu.ps1` dans une console PowerShell.
+1. Clonez le dépôt ou téléchargez les fichiers sur votre machine locale.
+2. Ouvrez une console PowerShell.
+3. Exécutez le script principal `menu.ps1` pour afficher le menu interactif et accéder aux différentes fonctionnalités.
+```bash
+.\menu.ps1
+```
 
+L'interface vous guidera à travers les options disponibles, permettant d'exécuter des actions telles que la gestion des connexions réseau, le redémarrage du système, ou l'exécution d'outils d'administration.
+
+## Extensibilité
+ARC est conçu pour être facilement extensible. De nouveaux modules seront ajoutés en créant des scripts PowerShell dans le dossier modules. Chaque module peut être lié à un sous-menu dans le menu.ps1 pour une gestion centralisée des options.
+
+
+
+
+### Notes
+Ce script est conçu avec 💕 par DEVMJ.

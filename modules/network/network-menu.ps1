@@ -5,11 +5,8 @@
 . "$PSScriptRoot\..\shared\header.ps1"
 
 
-
-
 # Boucle de menu réseau
 while ($true) {
-    # Show-Header
     Clear-Host
     Write-Host "==== Gestion du Réseau ====" -ForegroundColor Cyan
     Write-Host ""
